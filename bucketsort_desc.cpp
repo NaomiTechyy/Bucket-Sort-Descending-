@@ -18,6 +18,13 @@ int main() {
     for(int num : arr) {
         cout << num << " ";
     }
+// Finding the maximum element 
+    int max_val = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max_val) max_val = arr[i];
+    }
 
+    // Create buckets 
+    vector<int> buckets(max_val + 1, 0);
     return 0;
 }
