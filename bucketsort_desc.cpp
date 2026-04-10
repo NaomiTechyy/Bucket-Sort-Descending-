@@ -24,7 +24,12 @@ int main() {
         if (arr[i] > max_val) max_val = arr[i];
     }
 
-    // Create buckets 
+    
+   
+//  Create and Fill Buckets
     vector<int> buckets(max_val + 1, 0);
-    return 0;
+    for (int i = 0; i < n; i++) {
+        buckets[arr[i]]++;
+}   
+ return 0;
 }
