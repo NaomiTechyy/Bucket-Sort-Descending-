@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 int main() {
     int n;
     cout << "Enter number of elements: ";
@@ -14,10 +13,7 @@ int main() {
         cin >> arr[i];
     }
 
-    cout << "Unsorted list: ";
-    for(int num : arr) {
-        cout << num << " ";
-    }
+    
 // Finding the maximum element 
     int max_val = arr[0];
     for (int i = 1; i < n; i++) {
@@ -38,6 +34,11 @@ int main() {
             arr[index++] = i;
             buckets[i]--;
         }
-    }   
+    }
+cout << "\nSorted list (Descending): ";
+    for(int num : arr) {
+        cout << num << " ";
+    }
+    cout << endl;   
  return 0;
 }
